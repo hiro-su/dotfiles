@@ -1,0 +1,6 @@
+#windows install
+open cmd of Administrator
+
+mklink _vimrc dotfiles\.vimrc
+mklink _gvimrc dotfiles\.gvimrc
+mklink /D vimfiles dotfiles\.vim
