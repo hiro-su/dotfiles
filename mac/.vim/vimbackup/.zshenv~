@@ -1,0 +1,16 @@
+# MacPorts Installer addition on 2012-06-20_at_13:48:37: adding an appropriate PATH variable for use with MacPorts.
+#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+GEMBIN=/usr/local/Cellar/ruby/1.9.3-p194/bin
+export PATH=$GEMBIN:$PATH:/usr/local/bin
+
+export http_proxy=http://proxy.iiji.jp:8080/
+export HTTP_PROXY=http://proxy.iiji.jp:8080/
+export https_proxy=http://proxy.iiji.jp:8080/
+export HTTPS_PROXY=http://proxy.iiji.jp:8080/
+export ftp_proxy=http://proxy.iiji.jp:8080/
+export FTP_PROXY=http://proxy.iiji.jp:8080/
+
+export EDITOR=/usr/bin/vim
+export PATH=/Library/Haskell/bin

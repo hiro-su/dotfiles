@@ -1,0 +1,2 @@
+" for Hatena.vim
+let g:hatena_user='hiro_su'

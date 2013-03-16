@@ -1,0 +1,22 @@
+"vundle
+filetype off
+let $DOTVIM = expand('$HOME/.vim')    
+set rtp+=$DOTVIM/bundle/vundle        
+call vundle#rc('$DOTVIM/bundle')      
+Bundle 'gmarik/vundle'                
+Bundle 'thinca/vim-quickrun'          
+Bundle 'ZenCoding.vim'                
+Bundle 'thinca/vim-ref'               
+Bundle 'tpope/vim-fugitive'           
+Bundle 'tpope/vim-haml'               
+Bundle 'tpope/vim-rails'              
+Bundle 'Shougo/neocomplcache'         
+Bundle 'Shougo/unite.vim'             
+Bundle 'Lokaltog/vim-powerline'       
+Bundle 'taglist.vim'                  
+Bundle 'Shougo/vimshell.git'          
+Bundle 'Shougo/vimproc.git'           
+Bundle 'motemen/hatena-vim'
+Bundle 'https://github.com/eagletmt/ghcmod-vim.git'
+Bundle 'scrooloose/syntastic'
+filetype plugin indent on             

@@ -1,0 +1,1 @@
+let g:ghcmod_ghc_options = ['-idir1', '-idir2']

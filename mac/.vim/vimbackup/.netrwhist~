@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/sugimoto/github/ssh-config-lib/lib/ssh/config'
+let g:netrw_dirhist_2='/Users/sugimoto/code/ssh-config-lib/bin'
+let g:netrw_dirhist_3='/Users/sugimoto/github/ssh-config-lib/lib/ssh'
+let g:netrw_dirhist_4='/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/1.9.1/optparse'
+let g:netrw_dirhist_5='/usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick'

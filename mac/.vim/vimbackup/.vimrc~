@@ -1,0 +1,61 @@
+"" プラグインを使うようにする
+filetype plugin on
+"" おまじない
+"set shellslash
+filetype indent on
+
+"ファイルエンコード指定
+set fileencodings=ucs-bom,utf-8,iso-2022-jp,sjis,cp932,euc-jp,cp20932
+
+"行番号表示
+set number
+
+"全角スペースを視覚化
+highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=#666666
+au BufNewFile,BufRead * match ZenkakuSpace /　/
+
+"日本語入力をリセット
+au BufNewFile,BufRead * set iminsert=0
+
+"タブ幅をリセット
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+"テキスト折り返し
+set formatoptions+=mM
+set textwidth=108
+
+"バックアップファイルを作るディレクトリ
+set backupdir=$HOME/.vim/vimbackup
+"ファイル保存ダイアログの初期ディレクトリをバッファファイル位置に設定
+set browsedir=buffer 
+"スワップファイル用のディレクトリ
+set directory=$HOME/.vim/vimbackup
+"tmpディレクトリではバックアップを保存しない
+set backupskip=/tmp/*,/private/tmp/*
+
+"ハイライトをEsc2回で消す
+nmap <ESC><ESC> :nohlsearch<CR><ESC>
+
+"omnifunc
+setlocal omnifunc=syntaxcomplete#Complete
+
+"vundle
+source ~/.vimrc.bundle
+
+source ~/.vimrc.colors
+source ~/.vimrc.unite
+source ~/.vimrc.hatena
+
+" neocomplcache
+source ~/.vimrc.neocomp
+
+"zencoding
+"Ctrl+Enter , に変更
+let g:user_zen_leader_key = '<c-Enter>'
+let g:user_zen_settings = {'lang':'ja'}
+"zencoding連携
+let g:use_zen_complete_tag = 1
+
+source ~/.vimrc.ghcmod

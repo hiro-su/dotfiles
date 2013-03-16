@@ -1,0 +1,20 @@
+colorscheme molokai
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
+set cursorline
+set sm
+set ai
+syntax on
+
+"入力モード時、ステータスラインのカラーを変更                                    
+augroup InsertHook                                                               
+	autocmd!                                                                     
+	autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340       
+	autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90       
+augroup END                                                                      
+
+"ポップアップメニューの色   
+hi Pmenu ctermbg=0          
+hi PmenuSel ctermbg=4       
+hi PmenuSbar ctermbg=2      
+hi PmenuThumb ctermfg=3     
